@@ -1,0 +1,20 @@
+package model;
+
+
+
+public abstract class Personajes {
+	private int posx;
+	private int posy;
+	private int Tamanno;
+	
+	public Personajes(int posX,int posY) {
+		posx=posX;
+		posy=posY;
+		Tamanno=10;
+		
+	}
+	
+	
+	
+	
+}

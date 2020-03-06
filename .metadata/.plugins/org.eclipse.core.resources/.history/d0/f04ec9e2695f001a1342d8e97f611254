@@ -1,0 +1,23 @@
+package view;
+
+import processing.core.PApplet;
+import controller.ScreenGameController;
+
+public class ScreenGameView {
+	private PApplet app3;
+	ScreenGameController SGC;
+	
+	
+	public ScreenGameView(PApplet app3) {
+		this.app3=app3;
+		this.SGC = new ScreenGameController();
+		
+		
+	}
+	
+	public void drawScreenGame() {
+		app3.background(0);
+		SGC.drawScreenGameC();
+	}
+	
+}

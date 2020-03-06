@@ -1,0 +1,38 @@
+package model;
+
+import java.util.ArrayList;
+import processing.core.PApplet;
+
+public class Logic {
+	PApplet app6;
+	private int posx =250;
+	ArrayList<Personajes> personas;
+	
+	
+	public Logic(PApplet app6) {
+		personas=new ArrayList <Personajes>();
+		
+	}
+
+	public void anadirbalas() {
+		app6.fill(0);
+		
+	}
+
+	public void mover(int i) {
+		System.out.println("HASTA AQUI");
+		posx=posx+i;
+		
+		
+	}
+	
+	public int movio() {
+		
+		return posx;
+	}
+
+
+
+
+
+}

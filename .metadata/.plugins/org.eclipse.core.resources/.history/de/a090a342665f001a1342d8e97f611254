@@ -1,0 +1,9 @@
+package view;
+
+import processing.core.PApplet;
+
+public class ScreenGameView {
+	private PApplet app3;
+	
+	
+}

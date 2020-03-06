@@ -1,0 +1,10 @@
+package model;
+
+public class Enemigo extends Personajes {
+
+	public Enemigo(int posX, int posY) {
+		super(posX, posY);
+		// TODO Auto-generated constructor stub
+	}
+
+}

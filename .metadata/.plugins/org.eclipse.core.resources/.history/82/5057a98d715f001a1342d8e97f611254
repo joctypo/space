@@ -1,0 +1,23 @@
+package controller;
+
+import processing.core.PApplet;
+import model.Logic;
+
+public class ScreenGameController {
+	private PApplet app4;
+	Logic Lo;
+	
+	public ScreenGameController (PApplet app4) {
+		this.app4=app4;
+		this.Lo = new Logic();
+	}
+	
+	public void keyPressed() {
+		
+		if(app4.keyCode == 32) {
+				Lo.anadirbalas();
+		}
+		
+	}
+
+}

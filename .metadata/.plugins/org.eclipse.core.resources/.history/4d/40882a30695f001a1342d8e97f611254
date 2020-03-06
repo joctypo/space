@@ -1,0 +1,19 @@
+package view;
+
+import processing.core.PApplet;
+
+public class ScreenGameView {
+	private PApplet app3;
+	
+	public ScreenGameView(PApplet app3) {
+		this.app3=app3;
+		
+		
+	}
+	
+	public void drawScreenGame() {
+		app3.background(0);
+		
+	}
+	
+}

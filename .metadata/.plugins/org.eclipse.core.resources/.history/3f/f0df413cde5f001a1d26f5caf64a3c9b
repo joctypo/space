@@ -1,0 +1,39 @@
+package model;
+
+
+
+public abstract class Personajes {
+	
+	protected int posx;
+	protected int posy;
+	
+	//Constructor de la padre
+	public Personajes(int posX,int posY) {
+		posx=posX;
+		posy=posY;
+	}
+
+	
+	//Un getter que saca el Posx al la Lógica 
+	public int getPosx() {
+		return posx;
+	}
+
+	public void setPosx(int posx) {
+		this.posx = posx;
+	}
+
+	public int getPosy() {
+		return posy;
+	}
+
+	public void setPosy(int posy) {
+		this.posy = posy;
+	}
+
+
+	
+	
+	
+	
+}

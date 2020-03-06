@@ -1,0 +1,16 @@
+package controller;
+
+import processing.core.PApplet;
+
+public class ScreenGameController {
+	
+	private PApplet app4;
+	
+	
+
+	public void drawScreenGameC() {
+		
+		
+	}
+
+}

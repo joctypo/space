@@ -1,0 +1,39 @@
+package view;
+
+import processing.core.PApplet;
+import processing.core.PConstants;
+
+public class ScreenInitView  {
+
+	private PApplet app2;
+	//private int screeninit;
+	
+
+	public ScreenInitView(PApplet app2) {
+		this.app2 =app2;
+	}
+
+
+	public void drawScreenInit() {
+		app2.background(0);
+		drawInicio();
+		drawBoton();
+		
+	}
+	
+	private void drawBoton() {
+		
+	}
+
+	private void drawInicio() {
+		app2.textSize(35);
+		app2.fill(255);
+		app2.textAlign(PConstants.CENTER);
+		app2.text("Welcome to Space Invaders",250,150);
+		
+		
+	}
+
+
+	
+}

@@ -1,0 +1,45 @@
+package model;
+
+
+
+public abstract class Personajes {
+	
+	protected int posx;
+	protected int posy;
+	
+	
+	public Personajes(int posX,int posY) {
+		posx=posX;
+		posy=posY;
+		
+		
+	}
+
+	public int getPosx() {
+		return posx;
+	}
+
+	public void setPosx(int posx) {
+		this.posx = posx;
+	}
+
+	public int getPosy() {
+		return posy;
+	}
+
+	public void setPosy(int posy) {
+		this.posy = posy;
+	}
+
+	public int getTamanno() {
+		return Tamanno;
+	}
+
+	public void setTamanno(int tamanno) {
+		Tamanno = tamanno;
+	}
+	
+	
+	
+	
+}

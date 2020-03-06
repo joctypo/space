@@ -1,0 +1,76 @@
+package model;
+
+import java.util.ArrayList;
+import processing.core.PApplet;
+
+public class Logic {
+	PApplet app6;
+	private int posx;
+	private int posye=100;
+	private int posxe=10;
+	ArrayList<Personajes> personas;
+	
+	//Aquí se linkea el app y definimos el arraylist, también definimos el posx original del heroe
+	public Logic(PApplet app6) {
+		personas=new ArrayList <Personajes>();
+		creararreglo();
+		posx=personas.get(0).getPosx();
+	}
+	
+	// Aquí rellenamos un arreglo para saber donde van los enemigos y el heroe
+	private void creararreglo() {
+		for (int i=0;i<21;i++) {
+			if (i==0) {
+				personas.add(new Heroe(250,450));
+			}else {
+				
+				personas.add(new Enemigo(posxe,posye));
+				posxe=posxe+30;
+				posye=posye+30;
+				
+			}
+		}
+	}
+
+	
+	//Aqui creamos balas 
+	public void anadirbalas() {
+		app6.fill(0);
+	}
+	
+	
+	//Esta función suma el cambio al mover 
+	public void mover(int i) {
+		
+		if(posx>25 && posx<475) {
+		posx=posx+i;	
+		}
+		if(posx>=475 && i==-25) {
+		posx=posx+i;
+		}
+		if (posx<=25 && i==25) {
+		posx=posx+i;
+		}
+	}
+	
+	
+	//Esta función envia el Posx a el controller
+	public int getPosx() {
+		
+		return posx;
+	}
+
+	public int posyenemy(int posy) {
+		
+		posye=personas.get(posy).getPosy();
+		
+		return posye;
+	
+		
+	}
+
+
+
+
+
+}

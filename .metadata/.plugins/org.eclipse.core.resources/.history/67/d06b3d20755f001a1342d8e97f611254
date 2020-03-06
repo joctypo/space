@@ -1,0 +1,39 @@
+package view;
+
+import processing.core.PApplet;
+import processing.core.PConstants;
+import controller.ScreenGameController;
+
+public class ScreenGameView {
+	private PApplet app3;
+	ScreenGameController SGC;
+	
+	
+	public ScreenGameView(PApplet app3) {
+		this.app3=app3;
+		this.SGC = new ScreenGameController(app3);
+		
+		
+	}
+	
+	public void drawScreenGame() {
+		app3.background(0);
+		drawenemy();
+		drawhero();
+		drawbala();
+	}
+
+	private void drawbala() {
+		
+	}
+
+	private void drawhero() {
+		app3.rectMode(PConstants.CENTER);
+		app3.rect()
+	}
+
+	private void drawenemy() {
+		
+	}
+	
+}

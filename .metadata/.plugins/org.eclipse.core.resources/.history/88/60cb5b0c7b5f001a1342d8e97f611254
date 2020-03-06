@@ -1,0 +1,45 @@
+package controller;
+
+import processing.core.PApplet;
+import processing.core.PConstants;
+import model.Logic;
+
+public class ScreenGameController {
+	private PApplet app4;
+	Logic Lo;
+	private int posx=250;
+	
+	public ScreenGameController (PApplet app4) {
+		this.app4=app4;
+		this.Lo = new Logic();
+		
+		
+	}
+	
+	public void keyPressed() {
+		
+		if(app4.keyCode == 32) {
+				Lo.anadirbalas();
+		}
+		
+		if(app4.keyCode == PConstants.RIGHT) {
+			Lo.mover(1);
+			posx=Lo.movio();
+			
+	}
+		
+		if(app4.keyCode == PConstants.LEFT) {
+			Lo.mover(-1);
+			posx=Lo.movio();
+	}
+		
+	}
+	
+	public int getposx() {
+		
+		return posx;
+		
+	}
+	
+
+}

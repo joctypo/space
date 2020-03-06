@@ -1,0 +1,13 @@
+package model;
+
+public class Heroe extends Personajes {
+
+	public Heroe(int posX, int posY) {
+		super(posX, posY);
+		this.posx=250;
+		this.posy=450;
+	}
+	
+	
+
+}
